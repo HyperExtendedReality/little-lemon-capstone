@@ -22,7 +22,7 @@ const Menu = () => {
                                 <p>{recipe.price}</p>
                             </div>
                             <p>{recipe.description}</p>
-                            <button className='orderbtn' onClick={() => handleOrder(recipe,id)}>Order Now</button>
+                            <button className='orderbtn' onClick={() => handleOrder(recipe.id)}>Order Now</button>
                         </div>
                     </div>)
                 }

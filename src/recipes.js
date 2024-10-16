@@ -1,7 +1,7 @@
 
-import greeksalad from "../images/greek salad.jpg";
-import bruchetta from "../images/Bruchetta.png";
-import lemonDessert from "../images/desert.jpg";
+import greeksalad from "./images/greek salad.jpg";
+import bruchetta from "./images/bruchetta.svg";
+import lemonDessert from "./images/lemon dessert.jpg";
 const recipes = [
     {
       id: 1,

@@ -8,10 +8,10 @@ const BookingForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.SubmitForm(e);
+        props.submitForm(e);
     };
     const handleChange = (e) => {
-        setDate(e.target.value);
+        setDate(e);
         props.dispatch(e);
     };
 
@@ -19,7 +19,7 @@ const BookingForm = (props) => {
     <header>
         <section>
             <form onSubmit={handleSubmit}>
-                <fieldset>
+                <fieldset className="formField">
                     <div>
                         <label htmlFor="book-date">Choose date:</label>
                         <input id="book-date" value={date} onChange={(e) => handleChange(e.target.value)}
@@ -31,9 +31,8 @@ const BookingForm = (props) => {
                         <select id="book-time" value={times} onChange={(e) => setTimes(e.target.value)}>
                             <option value="">Select a time</option>
                             {
-                                props.availableTimes.map(availableTimes => {
-                                    return <option key={availableTimes}>{availableTimes}</option>
-                                })
+                                props.availableTimes.availableTimes.map(availableTimes => {
+                                    return <option key={availableTimes}>{availableTimes}</option>})
                             }
                         </select>
                     </div>

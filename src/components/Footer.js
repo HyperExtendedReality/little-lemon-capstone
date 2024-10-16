@@ -1,10 +1,11 @@
 import React from 'react';
+import logo from '../images/Logo.svg';
 
 const Footer = () => {
   return (
     <footer>
         <section>
-            <div>
+            <div className='company-info'>
                 <img src={logo} alt=''/>
                 <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
             </div>
@@ -39,3 +40,5 @@ const Footer = () => {
     </footer>
   );
 }
+
+export default Footer;
